@@ -1,0 +1,158 @@
+/*
+Theme Name: Flatsome Child
+Description: This is a child theme for Flatsome Theme
+Author: UX Themes
+Template: flatsome
+Version: 3.1
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+
+.wizard-page {
+    display: none;
+}
+
+.wizard-page:first-child {
+    display: block;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.next-button {
+    float: right;
+}
+
+.prev-button {
+    float: left;
+}
+.sam-weights {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    overflow: auto;
+}
+/* @media and screen (min-width: 1300px){
+	.sam-weights img{
+		max-width:100px;
+	}
+} */
+
+.sam-weights img {
+    max-width: 100px ;
+    height: auto;
+}
+
+.sam-weights li {
+    display: inline-block;
+    margin: 0 !important;
+    max-width: calc(100% / 12 * 2);
+    text-align: center;
+}
+
+.sam-weights input[class^="sam-select"] {
+    display: none;
+}
+
+.sam-weights label {
+    /*border: 1px solid #fff;*/
+    padding: 0;
+    display: block;
+    position: relative;
+    margin: 8px;
+    cursor: pointer;
+	color:#555 !important;
+}
+
+.sam-weights label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: absolute;
+    top: 25px !important;
+    left: 35px !important;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 9;
+}
+
+.sam-weights label img {
+    /*height: 70px;*/
+    /*width: 70px;*/
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+}
+
+/*.sam-weights :checked + label {*/
+/*border-color: #ddd;*/
+/*display: block !important;*/
+/*}*/
+
+.sam-weights :checked + label:before {
+    content: "✓";
+    background-color: #082241;
+    transform: scale(1);
+}
+
+.sam-weights :checked + label img {
+    transform: scale(0.9);
+    /* box-shadow: 0 0 5px #333; */
+    border: 3px solid #082241;
+    padding: 4px;
+    z-index: -1;
+}
+
+.sam-weights .sam-pre-select {
+    background: #082241;
+    color: #fff;
+    display: block;
+    margin: 0;
+}
+
+button.sam-pre-select {
+    background: #333;
+    color: #fff;
+}
+
+.product-main form.cart {
+    position: relative;
+}
+
+.elementor-column-gap-default>.elementor-column>.elementor-element-populated {
+    padding: 0 !important;
+}
+
+.Home-sec1{
+	width:100%;
+}
+.container-width, .full-width .ubermenu-nav, .container, .row {
+    max-width: 1200px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
